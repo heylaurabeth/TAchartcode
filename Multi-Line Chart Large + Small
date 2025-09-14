@@ -1,1 +1,194 @@
+//reference Figma: for legend, 2nd row/white version 
+//https://www.figma.com/design/HlTEX3qNDoBiPcXb0OiJ5k/TransAuditor-Design?node-id=0-1&t=vNjlEI1I5zMBCMW0-1
+
+//CONFIG Large Multi Line Chart
+const config = {
+  type: 'line',
+  data: data,
+  options: {
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: '#94989F', // changes x-axis label (text) color
+        },
+        grid: {
+          display: false,
+          color: '#EAEBEC',      // changes grid line color
+          borderColor: '#EAEBEC' // changes the axis line color
+        },
+      },
+      y: {
+        suggestedMin: 50,
+        suggestedMax: 80,
+        ticks: {
+          color: '#94989F', // changes y-axis label (text) color
+          stepSize: 15,
+        },
+        grid: {
+          display: false,
+          color: '#EAEBEC',      // changes grid line color
+          borderColor: '#EAEBEC' // changes the axis line color
+        },
+      },
+    },
+  },
+};
+
+
+/////////////////////////////////
+//SETUP Large Multi Line Chart
+const labels = ['Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22'];
+
+const data = {
+  labels: labels,
+  datasets: [
+    {
+      label: '1st Dataset',
+      data: [65, 59, 69, 70, 79],
+      borderColor: '#8741E2',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackgroundColor: '#8741E2', // blue dots
+      pointBorderColor: '#ffffff',
+      pointBorderWidth: 5,
+      borderWidth: 8,
+      pointRadius: 11,
+      pointHoverRadius: 11,
+      pointHitRadius: 12,
+    },
+    {
+      label: '2nd Dataset',
+      data: [45, 25, 60, 40, 72, 60, 75],
+      borderColor: '#B589ED',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackgroundColor: '#B589ED', // blue dots
+      pointBorderColor: '#ffffff',
+      pointBorderWidth: 5,
+      borderWidth: 8,
+      pointRadius: 11,
+      pointHoverRadius: 11,
+      pointHitRadius: 12,
+    },
+    {
+      label: '3rd Dataset',
+      data: [10, 20, 34, 40, 50, 63, 90],
+      borderColor: '#8288EE',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackgroundColor: '#8288EE', // blue dots
+      pointBorderColor: '#ffffff',
+      pointBorderWidth: 5,
+      borderWidth: 8,
+      pointRadius: 11,
+      pointHoverRadius: 11,
+      pointHitRadius: 12,
+    },
+    {
+      label: '4th Dataset',
+      data: [65, 59, 80, 81, 56, 55, 40],
+      borderColor: '#E278AC',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackgroundColor: '#E278AC', // blue dots
+      pointBorderColor: '#ffffff',
+      pointBorderWidth: 5,
+      borderWidth: 8,
+      pointRadius: 11,
+      pointHoverRadius: 11,
+      pointHitRadius: 12,
+    },
+  ],
+};
+
+
+/////////////////////////////////
+//CONFIG Small Multi Line Chart
+const config = {
+  type: 'line',
+  data: data,
+  options: {
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          usePointStyle: true,
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          display: false,
+          color: '#94989F', // changes x-axis label (text) color
+        },
+        grid: {
+          display: false,
+          color: '#EAEBEC',      // changes grid line color
+          borderColor: '#EAEBEC' // changes the axis line color
+        },
+      },
+      y: {
+        suggestedMin: 50,
+        suggestedMax: 80,
+        ticks: {
+          display: false,
+          color: '#94989F', // changes y-axis label (text) color
+          stepSize: 15,
+        },
+        grid: {
+          display: false,
+          color: '#EAEBEC',      // changes grid line color
+          borderColor: '#EAEBEC' // changes the axis line color
+        },
+      },
+    },
+  },
+};
+
+
+
+/////////////////////////////////
+//SETUP Small Multi Line Chart
+const labels = ['Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22'];
+
+const data = {
+  labels: labels,
+  datasets: [
+    {
+      label: '1st Dataset',
+      data: [65, 59, 69, 70, 79],
+      borderColor: '#8741E2',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackgroundColor: '#8741E2', // blue dots
+      pointBorderColor: '#ffffff',
+      borderWidth: 14,
+      pointBorderWidth: 6,
+      pointRadius: 18,
+      pointHoverRadius: 20,
+      pointHitRadius: 22,
+    },
+    {
+      label: '2nd Dataset',
+      data: [45, 25, 60, 40, 72, 60, 75],
+      borderColor: '#B589ED',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackgroundColor: '#B589ED', // blue dots
+      pointBorderColor: '#ffffff',
+      borderWidth: 14,
+      pointBorderWidth: 6,
+      pointRadius: 18,
+      pointHoverRadius: 20,
+      pointHitRadius: 22,
+    },
+    {
+      label: '3rd Dataset',
+      data: [10, 20, 34, 40, 50, 63, 90],
+      borderColor: '#8288EE',          // purple line
+      tension: 0.3,                     // smooth curve
+      pointBackg
 
