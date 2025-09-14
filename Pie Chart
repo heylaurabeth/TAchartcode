@@ -1,5 +1,6 @@
 //10 OPTION PIE CHART 
-//for backgroundColor and hoverBackgroundColor change them to linear gradients based on hex codes below that gradate to colors 20% lighter-see Figma
+//for backgroundColor and hoverBackgroundColor change them to linear gradients based on hex codes below that gradate to colors 20% lighter
+//reference Figma: for legend, card layout, gradients 
 //CONFIG SECTION
 const config = {
   type: 'pie',
