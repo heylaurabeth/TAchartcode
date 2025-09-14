@@ -1,1 +1,45 @@
+//5 OPTION DONUT CHART, BAD-->GOOD
+//CONFIG SECTION
+const config = {
+  type: 'doughnut',
+  data: data,
+  options: {
+    cutout: '60%',
+    plugins: { legend: { position: 'right' } }
+  }
+};
 
+/////////////////////////////////////
+//SETUP SECTION
+const data = {
+  labels: [
+    'Above Average',
+    'Good',
+    'Average',
+    'Fair',
+    'Insufficient',
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [200, 50, 100, 40, 10],
+    backgroundColor: [
+      '#7FCE87',
+      '#BEE6C2',
+      '#FDCA4A',
+      '#E27370',
+      '#FF5252',
+    ],
+    hoverBackgroundColor: [
+      '#99D89F',
+      '#CBEBCE',
+      '#FDD56E',
+      '#E88F8D',
+      '#FF7575',
+    ],
+    hoverOffset: 4,
+    hoverBorderWidth: 0,
+    borderRadius: 16,
+    borderWidth: 3,
+    rotation: 160,
+  }]
+};
