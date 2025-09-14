@@ -1,3 +1,9 @@
+
+
+//CONFIG Vertical Bar Chart
+//indexAxis: 'x', for vertical bar chart
+//indexAxis: 'y', for horizontal bar chart
+
 const config = {
   type: 'bar',
   data,
@@ -7,7 +13,7 @@ const config = {
         display: false, // hides the legend
       },
     },
-    indexAxis: 'x',
+    indexAxis: 'x', //change x to y to make a horizontal bar chart
     scales: {
       x: {
         // display: false // hides x-axis
@@ -27,3 +33,38 @@ const config = {
     },
   },
 };
+
+//////////////////////////////
+//SETUP Vertical Bar Chart
+const data = {
+  labels: ['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Consectetur', 'Elit', 'Sed'],
+  datasets: [
+    {
+      axis: 'y',
+      label: 'My First Dataset',
+      data: [65, 59, 80, 97, 56, 55, 40],
+      fill: false,
+      backgroundColor: [
+        '#8d4ae3',
+        '#b589ed',
+        '#888eef',
+        '#c3c6f6',
+        '#e37fb0',
+        '#eba1c4',
+        '#f1bed7'
+      ],
+      hoverBackgroundColor: [
+        '#985CE6',
+        '#BC95EF',
+        '#9499F1',
+        '#C9CCF7',
+        '#E68CB8',
+        '#EDAACA',
+        '#F2C4DB'
+      ],
+      borderWidth: 0,
+      borderRadius: 12
+    }
+  ]
+};
+
