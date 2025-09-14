@@ -1,3 +1,6 @@
+//reference Figma: for legend, 2nd row/white version 
+//https://www.figma.com/design/HlTEX3qNDoBiPcXb0OiJ5k/TransAuditor-Design?node-id=0-1&t=vNjlEI1I5zMBCMW0-1
+
 //CONFIG Large Single Line Chart
 const config = {
   type: 'line',
