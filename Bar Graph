@@ -1,0 +1,29 @@
+const config = {
+  type: 'bar',
+  data,
+  options: {
+    plugins: {
+      legend: {
+        display: false, // hides the legend
+      },
+    },
+    indexAxis: 'x',
+    scales: {
+      x: {
+        // display: false // hides x-axis
+        grid: { display: false },
+        ticks: {
+          color: '#94989F', // changes x-axis label (text) color
+        },
+      },
+      y: {
+        ticks: {
+          stepSize: 25,
+        },
+        grid: {
+          display: false,
+        },
+      },
+    },
+  },
+};
