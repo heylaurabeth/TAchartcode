@@ -1,4 +1,6 @@
 //5 OPTION DONUT CHART, BAD-->GOOD
+//reference Figma: for legend, card layout
+
 //CONFIG SECTION
 const config = {
   type: 'doughnut',
