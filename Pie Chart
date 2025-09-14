@@ -1,81 +1,24 @@
 //10 OPTION PIE CHART 
+//for backgroundColor and hoverBackgroundColor change them to linear gradients based on hex codes below that gradate to colors 20% lighter-see Figma
 //CONFIG SECTION
-
-const data = {
-  labels: [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'J'
-  ],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [147,66,51,29,22,8,6,16,10,5],
-    backgroundColor: [
-      '#8d4ae3',
-      '#b589ed',
-       '#CFB2F2',
-      '#8288EE',
-      '#A1A6F2',
-      '#C0C3F6',
-       '#E278AC',
-      '#eba1c4',
-      '#f1bed7',
-      '#A6C7FB',
-    ],
-   hoverBorderColor: [
-       '#8d4ae3',
-      '#b589ed',
-       '#CFB2F2',
-      '#8288EE',
-      '#A1A6F2',
-      '#C0C3F6',
-       '#E278AC',
-      '#eba1c4',
-      '#f1bed7',
-      '#A6C7FB',
-    ],
-     borderColor: [
-       '#8446d8',
-  '#aa7fe0',
-  '#C5A9E6',
-  '#7B82E0',
-  '#979DEA',
-  '#B4B8F0',
-  '#D96E9F',
-  '#E398BA',
-  '#EAB9CD',
-  '#9EBDF0'
-    ],
-     
-     hoverBackgroundColor: [ 
-       '#9c57e8',
-  '#c19cf2',
-  '#DCC3F6',
-  '#8f91f2',
-  '#ADB1F6',
-  '#CED0F9',
-  '#E98BBF',
-  '#F0B2D3',
-  '#F5CBE0',
-  '#B0D1FD'
-    ],
-  borderWidth: 2,
-
-    hoverOffset: 4
-  }]
+const config = {
+  type: 'pie',
+  data: data,
+  options: {
+    cutout: '0%',
+    plugins: { 
+      legend: { 
+        position: 'right',
+       labels: {
+          usePointStyle: true,
+        }, 
+      },
+    },
+  },
 };
 
-
-
+/////////////////////////////////
 //SETUP SECTION
-
 const data = {
   labels: [
     'A',
@@ -89,60 +32,58 @@ const data = {
     'I',
     'J'
   ],
-  datasets: [{
+  datasets: [{ 
     label: 'My First Dataset',
     data: [147,66,51,29,22,8,6,16,10,5],
     backgroundColor: [
       '#8d4ae3',
       '#b589ed',
-       '#CFB2F2',
+      '#CFB2F2',
       '#8288EE',
       '#A1A6F2',
       '#C0C3F6',
-       '#E278AC',
+      '#E278AC',
       '#eba1c4',
       '#f1bed7',
       '#A6C7FB',
     ],
-   hoverBorderColor: [
-       '#8d4ae3',
+   hoverBorderColor: [ //same as bg color
+      '#8d4ae3',
       '#b589ed',
-       '#CFB2F2',
+      '#CFB2F2',
       '#8288EE',
       '#A1A6F2',
       '#C0C3F6',
-       '#E278AC',
+      '#E278AC',
       '#eba1c4',
       '#f1bed7',
       '#A6C7FB',
     ],
-     borderColor: [
-       '#8446d8',
-  '#aa7fe0',
-  '#C5A9E6',
-  '#7B82E0',
-  '#979DEA',
-  '#B4B8F0',
-  '#D96E9F',
-  '#E398BA',
-  '#EAB9CD',
-  '#9EBDF0'
+     borderColor: [ //10% darker as bg color
+      '#8446d8',
+      '#aa7fe0',
+      '#C5A9E6',
+      '#7B82E0',
+      '#979DEA',
+      '#B4B8F0',
+      '#D96E9F',
+      '#E398BA',
+      '#EAB9CD',
+      '#9EBDF0'
     ],
-     
-     hoverBackgroundColor: [ 
-       '#9c57e8',
-  '#c19cf2',
-  '#DCC3F6',
-  '#8f91f2',
-  '#ADB1F6',
-  '#CED0F9',
-  '#E98BBF',
-  '#F0B2D3',
-  '#F5CBE0',
-  '#B0D1FD'
+     hoverBackgroundColor: [ //20% lighter than bg color
+      '#9c57e8',
+      '#c19cf2',
+      '#DCC3F6',
+      '#8f91f2',
+      '#ADB1F6',
+      '#CED0F9',
+      '#E98BBF',
+      '#F0B2D3',
+      '#F5CBE0',
+      '#B0D1FD'
     ],
-  borderWidth: 2,
-
-    hoverOffset: 4
+  borderWidth: 0,
+  hoverOffset: 4
   }]
 };
